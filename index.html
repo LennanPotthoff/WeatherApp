@@ -1,0 +1,341 @@
+<html>
+   
+<head>
+    <title>
+        My Weather
+    </title>
+    <link rel="icon" href="images/cloud.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/awesomplete.css" />
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    
+    <body>
+        <header>
+        
+    <nav id="navbar"> 
+        
+       <div id="date_text">
+       - <b><span id="weekday">Sunday</span>, <span id="day">12</span><sup id="ordinal">th</sup><span id="month"> December</span></b> -
+       </div>
+        </nav>
+            </header>
+        <main>
+        
+            <div id="main_background">
+                <div id="box-4">
+                
+                </div>
+                
+                <div id="box-5">
+                    
+                <div id=content_div>
+                    
+                <div id="upper_content">
+                    <div id="upper-box-1">
+                    <h1 id="degrees"><span id="tempvalue">24</span><sup>o</sup></h1>
+                    <p id="weather-type">Sunny</p>
+                        <div id="atmosphere_container">
+                                <div id="humidity-div">
+                                <h2 id="humidity-title">
+                                HUMIDITY
+                                    <br>
+                                    <span id="humidity-value">100%</span>
+                                </h2>
+                            </div>
+                            <div id="wind-div">
+                                <h2 id="wind-title">
+                                WIND
+                                    <br>
+                                    <span id="wind-value">100</span>KM/H
+                                </h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="upper-box-2">
+                        
+                        <div id="selected-city">
+                            
+                            <h1 id="city">Llanfairpwllgwyngylaergaer</h1>
+                        <hr id="city_line">
+                            
+                        </div>
+                        
+                        <div id="city-submit">
+                            <form>
+                        <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-city"></i></span>
+                        </div>
+                        <input id="cityValue" type="text" onfocus="this.value=''" class="form-control awesomplete" list="mylist" placeholder="City" required>
+                            <datalist id="mylist">
+	                           <option>Abu Dhabi</option>
+                                <option>Abuja</option>
+                                <option>Accra</option>
+                                <option>Addis Ababa</option>
+                                <option>Algiers</option>
+                                <option>Amman</option>
+                                <option>Amsterdam</option>
+                                <option>Andorra la Vella</option>
+                                <option>Ankara</option>
+                                <option>Antananarivo</option>
+                                <option>Apia</option>
+                                <option>Ashgabat</option>
+                                <option>Asmara</option>
+                                <option>Astana</option>
+                                <option>Asunción</option>
+                                <option>Athens</option>
+                                <option>Baghdad</option>
+                                <option>Baku</option>
+                                <option>Bamako</option>
+                                <option>Bandar Seri Begawan</option>
+                                <option>Bangkok</option>
+                                <option>Bangui</option>
+                                <option>Banjul</option>
+                                <option>Basseterre</option>
+                                <option>Beijing</option>
+                                <option>Beirut</option>
+                                <option>Belgrade</option>
+                                <option>Belmopan</option>
+                                <option>Berlin</option>
+                                <option>Bern</option>
+                                <option>Bishkek</option>
+                                <option>Bissau</option>
+                                <option>Bogota</option>
+                                <option>Brasilia</option>
+                                <option>Bratislava</option>
+                                <option>Brazzaville</option>
+                                <option>Bridgetown</option>
+                                <option>Brussels</option>
+                                <option>Bucharest</option>
+                                <option>Budapest</option>
+                                <option>Buenos Aires</option>
+                                <option>Bujumbura</option>
+                                <option>Cairo</option>
+                                <option>Canberra</option>
+                                <option>Capital</option>
+                                <option>Caracas</option>
+                                <option>Castries</option>
+                                <option>Chisinau</option>
+                                <option>Conakry</option>
+                                <option>Copenhagen</option>
+                                <option>Dakar</option>
+                                <option>Damascus</option>
+                                <option>Dhaka</option>
+                                <option>Dili</option>
+                                <option>Djibouti</option>
+                                <option>Dodoma</option>
+                                <option>Doha</option>
+                                <option>Dublin</option>
+                                <option>Dushanbe</option>
+                                <option>East Jerusalem</option>
+                                <option>Freetown</option>
+                                <option>Funafuti</option>
+                                <option>Gaborone</option>
+                                <option>Georgetown</option>
+                                <option>Guatemala City</option>
+                                <option>Hanoi</option>
+                                <option>Harare</option>
+                                <option>Havana</option>
+                                <option>Helsinki</option>
+                                <option>Honiara</option>
+                                <option>Islamabad</option>
+                                <option>Jakarta</option>
+                                <option>Jerusalem</option>
+                                <option>Juba</option>
+                                <option>Kabul</option>
+                                <option>Kampala</option>
+                                <option>Kathmandu</option>
+                                <option>Khartoum</option>
+                                <option>Kiev</option>
+                                <option>Kigali</option>
+                                <option>Kingston</option>
+                                <option>Kingstown</option>
+                                <option>Kinshasa</option>
+                                <option>Kuala Lumpur</option>
+                                <option>Kuwait City</option>
+                                <option>Libreville</option>
+                                <option>Lilongwe</option>
+                                <option>Lima</option>
+                                <option>Lisbon</option>
+                                <option>Ljubljana</option>
+                                <option>Lomé</option>
+                                <option>London</option>
+                                <option>Luanda</option>
+                                <option>Lusaka</option>
+                                <option>Luxembourg</option>
+                                <option>Madrid</option>
+                                <option>Majuro</option>
+                                <option>Malabo</option>
+                                <option>Malé</option>
+                                <option>Managua</option>
+                                <option>Manama</option>
+                                <option>Manila</option>
+                                <option>Maputo</option>
+                                <option>Maseru</option>
+                                <option>Mbabane</option>
+                                <option>Melekeok</option>
+                                <option>Mexico City</option>
+                                <option>Minsk</option>
+                                <option>Mogadishu</option>
+                                <option>Monaco</option>
+                                <option>Monrovia</option>
+                                <option>Montevideo</option>
+                                <option>Moroni</option>
+                                <option>Moscow</option>
+                                <option>Muscat</option>
+                                <option>Nairobi</option>
+                                <option>Nassau</option>
+                                <option>Naypyidaw</option>
+                                <option>N'Djamena</option>
+                                <option>New Delhi</option>
+                                <option>Niamey</option>
+                                <option>Nicosia</option>
+                                <option>Nouakchott</option>
+                                <option>Nukualofa</option>
+                                <option>Oslo</option>
+                                <option>Ottawa</option>
+                                <option>Ouagadougou</option>
+                                <option>Palikir</option>
+                                <option>Panama City</option>
+                                <option>Paramaribo</option>
+                                <option>Paris</option>
+                                <option>Phnom Penh</option>
+                                <option>Podgorica</option>
+                                <option>Port Louis</option>
+                                <option>Port Moresby</option>
+                                <option>Port of Spain</option>
+                                <option>Port Vila</option>
+                                <option>Port-au-Prince</option>
+                                <option>Porto Novo</option>
+                                <option>Prague</option>
+                                <option>Praia</option>
+                                <option>Pretoria</option>
+                                <option>Pristina</option>
+                                <option>Pyongyang</option>
+                                <option>Quito</option>
+                                <option>Rabat</option>
+                                <option>Reykjavík</option>
+                                <option>Riga</option>
+                                <option>Riyadh</option>
+                                <option>Rome</option>
+                                <option>Roseau</option>
+                                <option>San José</option>
+                                <option>San Marino</option>
+                                <option>San Salvador</option>
+                                <option>Sana'a</option>
+                                <option>Santiago</option></option>
+                                <option>Santo Domingo</option>
+                                <option>São Tomé</option>
+                                <option>Sarajevo</option>
+                                <option>Seoul</option>
+                                <option>Singapore</option>
+                                <option>Skopje</option>
+                                <option>Sofia</option>
+                                <option>Sri Jayawardenapura Kotte</option>
+                                <option>St. George's</option>
+                                <option>St. John's</option>
+                                <option>Stockholm</option>
+                                <option>Sucre</option>
+                                <option>Suva</option>
+                                <option>Taipei</option>
+                                <option>Tallinn</option>
+                                <option>Tarawa</option>
+                                <option>Tashkent</option>
+                                <option>Tbilisi</option>
+                                <option>Tegucigalpa</option>
+                                <option>Tehran</option>
+                                <option>Thimphu</option>
+                                <option>Tirana</option>
+                                <option>Tokyo</option>
+                                <option>Tripoli</option>
+                                <option>Tunis</option>
+                                <option>Ulaanbaatar</option>
+                                <option>Vaduz</option>
+                                <option>Valletta</option>
+                                <option>Vatican City</option>
+                                <option>Victoria</option>
+                                <option>Vienna</option>
+                                <option>Vientiane</option>
+                                <option>Vilnius</option>
+                                <option>Warsaw</option>
+                                <option>Washington D.C.</option>
+                                <option>Wellington</option>
+                                <option>Windhoek</option>
+                                <option>Yamoussoukro</option>
+                                <option>Yaoundé</option>
+                                <option>Yaren</option>
+                                <option>Yerevan</option>
+                                <option>Zagreb</option>
+                                </datalist>
+                        </div>
+                            <button type="button" class="btn btn-primary search-btn" id="go-btn">GO</button>
+                        </div>
+                             </form>   
+                        </div>
+                    
+                    </div>
+                </div>
+                    
+                <div id="lower_content">
+                    
+                    <div id="lower-box-2">
+                    
+                    
+                        
+                         <div class="day_container" id="day-1">
+                            <p class="weekday" id="weekday-1">MON</p>
+                            <img class="weather-icon"  id="weather-icon-1" src="images/sun.svg">
+                             <p class="temp"><span id="temp-1">18</span> <sup>o</sup>C</p>
+                             <p class="weather-description" id="weather-description-1">Snow</p>
+                        </div>
+                        <div  class="day_container" id="day-2">
+                            <p class="weekday" id="weekday-2">TUE</p>
+                            <img  class="weather-icon" id="weather-icon-2" src="images/sun.svg">
+                            <p class="temp" ><span id="temp-2">18</span> <sup>o</sup>C</p>
+                            <p class="weather-description" id="weather-description-2">Showers</p>
+                        </div>
+                        <div  class="day_container" id="day-3">
+                            <p class="weekday" id="weekday-3">WED</p>
+                            <img  id="weather-icon-3"  class="weather-icon" src="images/sun.svg">
+                            <p class="temp"><span id="temp-3">18</span> <sup>o</sup>C</p>
+                            <p class="weather-description" id="weather-description-3">Clear Sky</p>
+                        </div>
+                        <div  class="day_container" id="day-4">
+                            <p class="weekday" id="weekday-4">THU</p>
+                            <img  id="weather-icon-4"  class="weather-icon" src="images/sun.svg">
+                            <p class="temp"><span  id="temp-4">18</span> <sup>o</sup>C</p>
+                            <p class="weather-description" id="weather-description-4">Rainy</p>
+                        </div>
+                        <div  class="day_container" id="day-5">
+                            <p class="weekday" id="weekday-5">FRI</p>
+                            <img  id="weather-icon-5"  class="weather-icon" src="images/sun.svg">
+                            <p class="temp"><span  id="temp-5">18</span> <sup>o</sup>C</p>
+                            <p class="weather-description"  id="weather-description-5">Cloudy</p>
+                        </div>   
+                        
+                        
+                        
+                    </div>
+                </div>
+                </div>
+                </div>
+                
+                <div id="box-6">
+                
+                </div>
+            
+            </div>
+        
+        </main>
+    </body>
+    
+</html>

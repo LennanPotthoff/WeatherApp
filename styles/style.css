@@ -1,0 +1,316 @@
+
+@font-face {
+  font-family: Lato;
+  src: url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+}
+
+    #upper_content{
+    background:  linear-gradient(to bottom, rgba(107, 105, 173, 0.5), rgba(254, 184, 186, 0.73)), url("forest.jpg");;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: gradient 120s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    
+    #upper-box-1{
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;    
+}
+    
+    #upper-box-2{
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    flex-grow: 1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+     min-width:400px;     
+   width: auto !important;  
+   width:400px;           
+}
+
+nav{
+    background-color: #432C85;
+}
+
+#navbar{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+  #box-2 {
+    background-color: #432C85;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+#date_text{
+    background: #432C85;
+    text-align: center;
+    color: white;
+    font-family: Lato;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    height: auto;
+    margin: 0;
+    padding: 24px;
+}
+
+#app_title{
+    height: auto;
+    color: white;
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-family: Lato;
+}
+
+#main_background{
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-image:  linear-gradient(to bottom, rgba(238, 122, 188, 0.73), rgba(87, 94, 245, 0.5)),
+    url("mtrange.jpg");
+    
+}
+
+#lower_content{
+    background: white;
+    width: 100%;
+    display: flex;
+    margin-bottom:48px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+#content_div{
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 100%;
+}
+
+#box-4 {
+    margin-top: 48px;
+    background-color: transparent;
+    width: 10%;
+    height: 25%;
+  }
+
+  #box-5 {
+    margin-top: 48px;
+    background-color: transparent;
+    min-width: 80%;
+    height: 25%;
+  }
+  #box-6 {
+      margin-top: 48px;
+    background-color: transparent;
+    width: 10%;
+    height: 25%;
+  }
+
+#degrees{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Lato;
+    font-size: 6rem;
+    text-align: center;
+}
+
+#weather-type{
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 8px;
+    font-family: Lato;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#atmosphere_container{
+    display: flex;
+    text-align: center;
+    margin: 32px;
+    
+}
+
+#humidity-div{
+    flex-grow: 1;
+}
+
+#humidity-title{
+    color: white;
+    font-size: 1rem;
+    font-family: Lato;
+    float: right;
+    margin-right: 16px;
+    letter-spacing: 4px;
+}
+
+#wind-title{
+    
+    color: white;
+    font-size: 1rem;
+    font-family: Lato;
+    float: left;
+    margin-left: 16px;
+    letter-spacing: 4px;
+}
+
+#wind-div{
+    flex-grow: 1;
+    border-left: 2px white solid;
+}
+
+
+#city{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    color: white;
+    text-transform: capitalize;
+    font-family: Lato;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    font-size: 2rem;
+    padding: 0px;
+    text-align: center; 
+}
+
+#city_line{
+    width: 210px;
+    height: 8px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+#city-submit{
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.search-btn{
+    width: 100%;
+    margin-top: 24px;
+}
+
+#lower-box-1{
+    width: 50%;
+    height: 100%;
+}
+
+#lower-box-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.day_container{
+    padding: 16px;
+    flex-basis: 20%;
+    height: auto;
+    
+}
+
+.weather-icon{
+    width: 75px;
+    display:block;
+    margin:auto;
+}
+
+.weekday{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: Lato;
+    text-align: center;
+    font-size: 1.5rem;
+}  
+
+.temp{
+    text-align: center;
+    font-family: Lato;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.weather-description{
+    text-align: center;
+    font-family: Lato;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.fadeOut{
+   animation-name: fadeOut;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+.fadeIn{
+   animation-name: fadeIn;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
