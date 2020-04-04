@@ -139,14 +139,14 @@ function getWeatherData(local, lon, lat){
     
     //API Call
     var req = new XMLHttpRequest();
-    req.open("GET",'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=fdeb1baa605f39f36906817a457b70ed', true);   
+    req.open("GET",'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=fdeb1baa605f39f36906817a457b70ed', true);   
     }
     }
     
     else{
     //API Call
     var req = new XMLHttpRequest();
-    req.open("GET",'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=fdeb1baa605f39f36906817a457b70ed', true);
+    req.open("GET",'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=fdeb1baa605f39f36906817a457b70ed', true);
     }
     
     req.send();
@@ -172,11 +172,11 @@ function getWeatherData(local, lon, lat){
     req.abort();
     if(!local){
        req = new XMLHttpRequest();
-       req.open("GET", "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=fdeb1baa605f39f36906817a457b70ed", true); 
+       req.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=fdeb1baa605f39f36906817a457b70ed", true); 
     }
     else{
         req = new XMLHttpRequest();
-        req.open("GET", 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=fdeb1baa605f39f36906817a457b70ed', true);
+        req.open("GET", 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=fdeb1baa605f39f36906817a457b70ed', true);
     }
     req.send();
     req.onload = function(){
