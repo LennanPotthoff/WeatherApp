@@ -33,8 +33,6 @@
     
     #upper-box-1{
     height: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
     flex-grow: 1;    
@@ -42,21 +40,22 @@
     
     #upper-box-2{
     height: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 3rem;
     flex-grow: 1;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-     min-width:400px;     
-   width: auto !important;  
-   width:400px;           
-}
+
+    html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}             
+
 
 nav{
     background-color: #432C85;
@@ -165,9 +164,7 @@ nav{
 
 #atmosphere_container{
     display: flex;
-    text-align: center;
-    margin: 32px;
-    
+    text-align: center;    
 }
 
 #humidity-div{
@@ -179,7 +176,6 @@ nav{
     font-size: 1rem;
     font-family: Lato;
     float: right;
-    margin-right: 16px;
     letter-spacing: 4px;
 }
 
@@ -189,7 +185,6 @@ nav{
     font-size: 1rem;
     font-family: Lato;
     float: left;
-    margin-left: 16px;
     letter-spacing: 4px;
 }
 
